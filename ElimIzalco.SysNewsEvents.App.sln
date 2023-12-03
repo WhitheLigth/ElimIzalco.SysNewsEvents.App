@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElimIzalco.SysNewsEvents.UIMAUI", "ElimIzalco.SysNewsEvents.UIMAUI\ElimIzalco.SysNewsEvents.UIMAUI.csproj", "{E5C7711E-D573-4159-B23D-A013102C27F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5C7711E-D573-4159-B23D-A013102C27F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C7711E-D573-4159-B23D-A013102C27F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C7711E-D573-4159-B23D-A013102C27F7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E5C7711E-D573-4159-B23D-A013102C27F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C7711E-D573-4159-B23D-A013102C27F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C7711E-D573-4159-B23D-A013102C27F7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4A5057D-4002-430C-9463-BEC7852A9FCB}
+	EndGlobalSection
+EndGlobal
