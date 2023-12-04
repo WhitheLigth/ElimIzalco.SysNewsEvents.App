@@ -1,27 +1,28 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">ElimIzalco.SysNewsEvents.UIMAUI</a>
-    </div>
-</div>
-
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
-
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
+﻿<MudPaper Width="250px" Class="py-3" Elevation="1">
+    <MudNavMenu>
+        <MudText Typo="Typo.h6" Class="px-4 ml-13">@* <img src="img/LogoElimIzalcoWhithe.png" width="45" /> *@<img src="/favicon.png" class="ml-9" /></MudText>
+        <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">Menu Principal</MudText>
+        <MudDivider Class="my-2" />
+        <MudNavGroup Title="Dashboard" Icon="@Icons.Material.Filled.Dashboard" Expanded="true">
+            <MudNavLink Href="/">Inicio</MudNavLink>
+            <MudNavLink Href="/">Novedades</MudNavLink>
+        </MudNavGroup>
+        <MudNavGroup Title="Pensamientos" Icon="@Icons.Material.Filled.Book" Expanded="true">
+            <MudNavLink Href="/">Espirituales</MudNavLink>
+            <MudNavLink Href="/">Sabiduria y Consejos</MudNavLink>
+            <MudNavLink Href="/">Fortaleza</MudNavLink>
+            <MudNavLink Href="/">Perdon y Reconciliacion</MudNavLink>
+            <MudNavLink Href="/">Esperanza</MudNavLink>
+        </MudNavGroup>
+        <MudNavGroup Title="Calendario Elim Izalco" Icon="@Icons.Material.Filled.CalendarViewMonth" Expanded="true">
+        <MudNavLink Href="/">Eventos y Actividades Locales</MudNavLink>
+        </MudNavGroup>
+        <MudNavGroup Title="Multimedia" Icon="@Icons.Material.Filled.LiveTv" Expanded="true">
+            <MudNavLink Href="/">Transmiciones de Facebook Live</MudNavLink>
+            <MudNavLink Href="/">Fotos Elim Izalco</MudNavLink>
+        </MudNavGroup>
+        <MudNavGroup Title="Ajustes de Usuario" Icon="@Icons.Material.Filled.Settings" Expanded="true">
+            <MudNavLink Href="/">Configuracion</MudNavLink>
+        </MudNavGroup>
+    </MudNavMenu>
+</MudPaper>
