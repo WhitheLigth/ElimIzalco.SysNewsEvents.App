@@ -1,0 +1,68 @@
+﻿@page "/"
+
+<br />
+<br />
+<h1 style="text-align:center">Dios Te Bendiga! - Elim Izalco App</h1>
+<br />
+<br />
+<MudCard>
+    <MudCardContent>
+        <MudText Typo="Typo.h4">Versiculo Del Dia</MudText>
+        <MudText Typo="Typo.h6">Porque la paga del pecado es muerte, mas la dádiva de Dios es vida eterna en Cristo Jesús Señor nuestro.</MudText>
+        <br />
+        <MudText Typo="Typo.body1">Romanos 6:23</MudText>
+        <MudText Typo="Typo.body2">Biblia Reina Valera - 1960</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <div style="display:flex; margin-left:5px">
+            <MudIconButton Icon="@Icons.Material.Filled.ContentCopy"></MudIconButton>
+            <MudIconButton Icon="@Icons.Material.Filled.Share"></MudIconButton>
+        </div>
+    </MudCardActions>
+</MudCard>
+<br />
+<br />
+<MudCarousel Class="mud-width-full" Style="height:200px;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+    <MudCarouselItem Transition="transition" Color="@Color.Primary">
+        <div class="d-flex" style="height:100%">
+            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem Transition="transition" Color="@Color.Secondary">
+        <div class="d-flex" style="height:100%">
+            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem Transition="transition">
+        <div class="d-flex" style="height:100%">
+            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Primary" Size="@Size.Large" />
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem Transition="transition" Color="@Color.Secondary">
+        <div class="d-flex" style="height:100%">
+            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+        </div>
+    </MudCarouselItem>
+</MudCarousel>
+<br />
+<br />
+<MudText Typo="Typo.h4" Style="margin-left:10px">Actividades Cercanas</MudText>
+<MudDataGrid Items="@Elements.Take(4)">
+    <Columns>
+        <PropertyColumn Property="x => x" Title="Nr" contenteditable="true"/>
+        <PropertyColumn Property="x => x" Title="Titulo" />
+        <PropertyColumn Property="x => x" Title="Horario" />
+        <PropertyColumn Property="x => x" Title="Invita" />
+    </Columns>
+</MudDataGrid>
+<br />
+<br />
+
+@code {
+    private IEnumerable<Element> Elements = new List<Element>();
+    private bool arrows = true;
+    private bool bullets = true;
+    private bool enableSwipeGesture = true;
+    private bool autocycle = true;
+    private Transition transition = Transition.Slide;
+}
